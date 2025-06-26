@@ -28,7 +28,7 @@ useEffect(()=>{
 },[productId])
 
   return productData? (
-    <div className='border-t-2 pt-10 transition-opacity ease-in duration-500 opacity-100'>
+    <div className=' pt-10 transition-opacity ease-in duration-500 opacity-100'>
       <div className='flex gap-12 sm:gap-12 flex-col sm:flex-row'>
         {/*Product Images*/}
         <div className='flex-1 flex flex-col-reverse gap-3 sm:flex-row '>
@@ -61,7 +61,7 @@ useEffect(()=>{
               <p>Select Size</p>
               <div className='flex gap-2'>
                 {productData.sizes.map((item,index)=>(
-                  <button onClick={()=>setSize(item)} className={`cursor-pointer border py-2 px-4 bg-gray-100 ${item === size ? 'border-orange-500' : ''}`} key={index}>{item}</button>
+                  <button onClick={()=>setSize(item)} className={`cursor-pointer border py-2 px-4 rounded-3xl  ${item === size ? 'border-orange-500' : ''}`} key={index}>{item}</button>
                 ))}
               </div>
             </div>

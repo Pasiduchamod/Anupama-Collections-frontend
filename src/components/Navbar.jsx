@@ -47,11 +47,13 @@ const Navbar = () => {
 
       {/* Right Section */}
       <div className="flex items-center gap-4 sm:gap-6">
+        <NavLink to='/collection'>
         <img
           onClick={() => setShowSearch(true)}
           src={assets.search_icon}
           className="w-5 sm:w-6 cursor-pointer hover:scale-110 transition-transform"
         />
+        </NavLink>
 
         {/* Profile Dropdown */}
         <div className="group relative">
